@@ -17,38 +17,38 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"efka.me","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="最新 Clash 详细使用教程前言Clash是当前大多数机场都支持的代理软件，它简单而又有效的交互方式为用户提供了一个能够快速订阅的方式。下面将为从未接触过的小白简单介绍一下Clash的使用方法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Clash的简单使用方法">
-<meta property="og:url" content="http://example.com/2022/03/17/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:url" content="https://efka.me/2022/03/17/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="书屋">
 <meta property="og:description" content="最新 Clash 详细使用教程前言Clash是当前大多数机场都支持的代理软件，它简单而又有效的交互方式为用户提供了一个能够快速订阅的方式。下面将为从未接触过的小白简单介绍一下Clash的使用方法。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647864074463.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647864222370.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862181490.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862324020.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862445239.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862519051.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862616942.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862714008.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862787199.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862891770.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647863202243.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647863323545.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647863531757.png">
-<meta property="og:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647863620695.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647864074463.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647864222370.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862181490.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862324020.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862445239.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862519051.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862616942.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862714008.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862787199.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647862891770.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647863202243.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647863323545.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647863531757.png">
+<meta property="og:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647863620695.png">
 <meta property="article:published_time" content="2022-03-17T10:45:50.000Z">
 <meta property="article:modified_time" content="2022-03-21T13:25:14.942Z">
 <meta property="article:author" content="Kayvan">
 <meta property="article:tag" content="科学上网">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647864074463.png">
+<meta name="twitter:image" content="https://efka.me/image/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/1647864074463.png">
 
-<link rel="canonical" href="http://example.com/2022/03/17/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
+<link rel="canonical" href="https://efka.me/2022/03/17/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -166,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/17/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://efka.me/2022/03/17/Clash%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
